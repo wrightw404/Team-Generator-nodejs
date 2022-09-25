@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "inquirer": "^9.1.2"
+  },
+  "name": "module10",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "jest": "^29.0.3"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
