@@ -13,10 +13,10 @@ Your task is to build a Node.js command-line application that takes in informati
 Because this application won’t be deployed, you’ll need to provide a link to a walkthrough video that demonstrates its functionality and all of the tests passing. You’ll need to submit a link to the video AND add it to the readme of your project
 
 ### User Story 
-![user story](../../../../../../var/folders/d4/1mgtvqrd2jbch9mn467vymq40000gn/T/TemporaryItems/NSIRD_screencaptureui_88YvlS/Screen%20Shot%202022-09-25%20at%2012.51.01%20PM.png)
+![](../../../../Desktop/Screen%20Shot%202022-05-27%20at%2012.59.42%20PM.png)
 
-### Acceptance Criteria 
-![acceptance criteria](../../../../../../var/folders/d4/1mgtvqrd2jbch9mn467vymq40000gn/T/TemporaryItems/NSIRD_screencaptureui_FomzPS/Screen%20Shot%202022-09-25%20at%2012.51.41%20PM.png)
+### Acceptance Criteria
+![](../../../../Desktop/Screen%20Shot%202022-08-25%20at%202.07.57%20PM.png)
 ## Walkthrough 
 
 
