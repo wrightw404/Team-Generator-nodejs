@@ -1,5 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs'); 
+//call the classes
+
 //empty array for team 
 const teamProfile = [];
 
@@ -51,11 +53,37 @@ const managerQuestions = () => {
             validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
         }
     ])
+    .then(input => {
+        const newManager = new manager(input.name, input.ID, input.email, input.officeNumber);
+        //push newManager to empty array 
+        teamProfile.push(newManager);
+        //call menu function
+        menuQuestions();
+    })
 };
 
 const menuQuestions = () => {
-    
-}
+    return inquirer.prompt([
+        {
+            type: "list",
+            message: "what is your name?",
+            name: "menu",
+            choices: ["Add an engineer", "Add an intern", "Finish building team"], 
+        },
+    ]).then(userInput => {
+        switch(userInput.menu){
+            case 'Add an engineer':
+                engineerQuestions();
+            break;
+            case 'Add an intern':
+                internQuestions();
+            break;
+            default:
+                //need a build team function 
+                
+        }
+    })
+};
 
 const engineerQuestions = () => {
     return inquirer.prompt([
