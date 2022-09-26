@@ -112,6 +112,13 @@ const engineerQuestions = () => {
             validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
         }
     ])
+    .then(input => {
+        const newEngineer = new engineer(input.name, input.ID, input.email, input.github);
+        //push newEngineer to empty array 
+        teamProfile.push(newEngineer);
+        //call menu function
+        menuQuestions();
+    })
 };
 
 const internQuestions = () => {
@@ -141,4 +148,11 @@ const internQuestions = () => {
             validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
         }
     ])
+    .then(input => {
+        const newIntern = new intern(input.name, input.ID, input.email, input.school);
+        //push newIntern to empty array 
+        teamProfile.push(newIntern);
+        //call menu function
+        menuQuestions();
+    })
 };
