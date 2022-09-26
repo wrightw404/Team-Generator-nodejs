@@ -5,6 +5,7 @@ const path = require('path');
 const manager = require('./lib/managerClass');
 const engineer = require('./lib/engineerClass');
 const intern = require('./lib/internClass');
+const { inherits } = require('util');
 //empty array for team 
 const teamProfile = [];
 
@@ -33,25 +34,25 @@ const managerQuestions = () => {
     return inquirer.prompt([
         {
             type: "input",
-            message: "what is your name?",
+            message: "what is the manager's name?",
             name: "name",
             validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
         },
         {
             type: "input",
-            message: "what is your ID?",
+            message: "what is manager's ID?",
             name: "ID",
             validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
         },
         {
             type: "input",
-            message: "what is your email?",
+            message: "what is manager's email?",
             name: "email",
             validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
         },
         {
             type: "input",
-            message: "what is your office number?",
+            message: "what is manager's office number?",
             name: "officeNumber",
             validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
         }
@@ -93,25 +94,25 @@ const engineerQuestions = () => {
     return inquirer.prompt([
         {
             type: "input",
-            message: "what is your name?",
+            message: "what is the engineer's name?",
             name: "name",
             validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
         },
         {
             type: "input",
-            message: "what is your ID?",
+            message: "what is the engineer's ID?",
             name: "ID",
             validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
         },
         {
             type: "input",
-            message: "what is your email?",
+            message: "what is the engineeer's email?",
             name: "email",
             validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
         },
         {
             type: "input",
-            message: "what is your Github username?",
+            message: "what is engineers Github username?",
             name: "github",
             validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
         }
@@ -129,25 +130,25 @@ const internQuestions = () => {
     return inquirer.prompt([
         {
             type: "input",
-            message: "what is your name?",
+            message: "what is the intern's name?",
             name: "name",
             validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
         },
         {
             type: "input",
-            message: "what is your ID?",
+            message: "what is the intern's ID?",
             name: "ID",
             validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
         },
         {
             type: "input",
-            message: "what is your email?",
+            message: "what is the intern's email?",
             name: "email",
             validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
         },
         {
             type: "input",
-            message: "where did you go to school?",
+            message: "where did the intern go to school?",
             name: "school",
             validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
         }
@@ -162,7 +163,7 @@ const internQuestions = () => {
 };
 
 const teamBuidler = () => {
-    menuQuestions()
+   init()
           // Use writeFileSync method to use promises instead of a callback function
           .then((teamProfile) => fs.writeFileSync('team.html', generateHTML(teamProfile)))
           .then(() => console.log('Successfully wrote to team.html'))
