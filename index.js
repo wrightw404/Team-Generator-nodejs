@@ -1,5 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs'); 
+//empty array for team 
+const teamProfile = [];
 
 const generateHTML = ({employee, manager, engineer, intern}) =>
 `<!DOCTYPE html>
@@ -21,57 +23,6 @@ const generateHTML = ({employee, manager, engineer, intern}) =>
 </body>
 </html>`;
 
-const engineerQuestions = () => {
-    return inquirer.prompt([
-        {
-            type: "input",
-            message: "what is your name?",
-            name: "name",
-            validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
-        },
-        {
-            type: "input",
-            message: "what is your ID?",
-            name: "ID",
-            validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
-        },
-        {
-            type: "input",
-            message: "what is your email?",
-            name: "email",
-            validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
-        },
-        {
-            type: "input",
-            message: "what is your Github username?",
-            name: "github",
-            validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
-        }
-    ])
-};
-
-const employeeQuestions = () => {
-    return inquirer.prompt([
-        {
-            type: "input",
-            message: "what is your name?",
-            name: "name",
-            validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
-        },
-        {
-            type: "input",
-            message: "what is your ID?",
-            name: "ID",
-            validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
-        },
-        {
-            type: "input",
-            message: "what is your email?",
-            name: "email",
-            validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
-        }
-    ])
-};
 
 const managerQuestions = () => {
     return inquirer.prompt([
@@ -97,6 +48,35 @@ const managerQuestions = () => {
             type: "input",
             message: "what is your office number?",
             name: "officeNumber",
+            validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
+        }
+    ])
+};
+
+const engineerQuestions = () => {
+    return inquirer.prompt([
+        {
+            type: "input",
+            message: "what is your name?",
+            name: "name",
+            validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
+        },
+        {
+            type: "input",
+            message: "what is your ID?",
+            name: "ID",
+            validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
+        },
+        {
+            type: "input",
+            message: "what is your email?",
+            name: "email",
+            validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
+        },
+        {
+            type: "input",
+            message: "what is your Github username?",
+            name: "github",
             validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
         }
     ])
