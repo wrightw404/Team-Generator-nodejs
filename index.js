@@ -66,7 +66,7 @@ const menuQuestions = () => {
     return inquirer.prompt([
         {
             type: "list",
-            message: "what is your name?",
+            message: "Please select who you would like to add",
             name: "menu",
             choices: ["Add an engineer", "Add an intern", "Finish building team"], 
         },
