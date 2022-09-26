@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs'); 
 
-const generateHTML = ({employee, manager, engineer, intern}) =>
+const generateHTML = ({Employee, manager, engineer, intern}) =>
 `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +13,7 @@ const generateHTML = ({employee, manager, engineer, intern}) =>
 <body>
 <div class="jumbotron jumbotron-fluid">
 <div class="container">
-  
+
 
 
 </div>
