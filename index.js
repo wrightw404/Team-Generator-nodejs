@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs'); 
+const path = require('path');
 //call the classes
 const manager = require('./lib/managerClass');
 const engineer = require('./lib/engineerClass');
