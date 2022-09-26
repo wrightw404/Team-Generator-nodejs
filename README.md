@@ -5,6 +5,7 @@
 * [Installation](#installation)
 * [License](#license)
 * [Contributing](#contributing)
+* [Resources](#resources)
 * [Questions](#questions)
         
 ## Description 
@@ -29,6 +30,8 @@ MIT License
 
 ## Contributing 
 William Wright was sole contributer 
+#### Resources 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super
 
 ## Questions
 if you have any questions you can reach out to me via email at wrightw404@gmail.com 
