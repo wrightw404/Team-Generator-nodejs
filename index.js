@@ -1,7 +1,9 @@
 const inquirer = require('inquirer');
 const fs = require('fs'); 
 //call the classes
-
+const manager = require('./lib/managerClass');
+const engineer = require('./lib/engineerClass');
+const intern = require('./lib/internClass');
 //empty array for team 
 const teamProfile = [];
 
