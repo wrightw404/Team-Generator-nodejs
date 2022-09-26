@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs'); 
 
-const generateHTML = ({Employee, manager, engineer, intern}) =>
+const generateHTML = ({employee, manager, engineer, intern}) =>
 `<!DOCTYPE html>
 <html lang="en">
 <head>
