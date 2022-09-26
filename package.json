@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "inquirer": "^9.1.2",
+    "inquirer": "^8.2.4",
     "path": "^0.12.7"
   },
   "name": "module10",
