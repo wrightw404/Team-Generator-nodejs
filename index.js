@@ -53,6 +53,10 @@ const managerQuestions = () => {
     ])
 };
 
+const menuQuestions = () => {
+    
+}
+
 const engineerQuestions = () => {
     return inquirer.prompt([
         {
