@@ -5,7 +5,10 @@ const path = require('path');
 const manager = require('./lib/managerClass');
 const engineer = require('./lib/engineerClass');
 const intern = require('./lib/internClass');
-const { inherits } = require('util');
+const path = require('path');
+//const util = require('util');
+const OUTPUT_DIR = path.resolve(dirname, 'dist');
+const outputPath = path.join(OUTPUT_DIR, 'team.html')
 //empty array for team 
 const teamProfile = [];
 
@@ -22,6 +25,10 @@ const generateHTML = ({employee, manager, engineer, intern}) =>
 <div class="jumbotron jumbotron-fluid">
 <div class="container">
 
+${employee}
+${manager}
+${engineer}
+${intern}
 
 
 </div>
@@ -163,11 +170,12 @@ const internQuestions = () => {
 };
 
 const teamBuidler = () => {
-   init()
-          // Use writeFileSync method to use promises instead of a callback function
-          .then((teamProfile) => fs.writeFileSync('team.html', generateHTML(teamProfile)))
-          .then(() => console.log('Successfully wrote to team.html'))
-          .catch((err) => console.error(err));
+   if (!fs.existsSync(OUTPUT_DIR)) {
+    //builds directory if one isnt built
+        fs.mkdirSync(OUTPUT_DIR)
+   }
+   // writes the file and takes in the name 'team.html' and creates the html with the newly added team members
+   fs.writeFileSync(outputPath, generateHTML(teamProfile));
 }
 
 //starts applications 

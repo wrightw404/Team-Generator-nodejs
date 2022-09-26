@@ -33,6 +33,7 @@ William Wright was sole contributer
 #### Resources 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch#description
+https://www.geeksforgeeks.org/node-js-fs-mkdirsync-method/
 
 ## Questions
 if you have any questions you can reach out to me via email at wrightw404@gmail.com 
