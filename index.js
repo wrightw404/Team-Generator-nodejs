@@ -83,6 +83,7 @@ const menuQuestions = () => {
             break;
             default:
                 //need a build team function 
+                teamBuidler();
                 
         }
     })
@@ -159,3 +160,14 @@ const internQuestions = () => {
         menuQuestions();
     })
 };
+
+const teamBuidler = () => {
+    menuQuestions()
+          // Use writeFileSync method to use promises instead of a callback function
+          .then((teamProfile) => fs.writeFileSync('team.html', generateHTML(teamProfile)))
+          .then(() => console.log('Successfully wrote to team.html'))
+          .catch((err) => console.error(err));
+}
+
+//starts applications 
+managerQuestions();
