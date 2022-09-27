@@ -5,6 +5,7 @@ const path = require('path');
 const manager = require('./lib/managerClass');
 const engineer = require('./lib/engineerClass');
 const intern = require('./lib/internClass');
+const htmlGenerator = require('./htmlGenerator');
 //const util = require('util');
 const OUTPUT_DIR = path.resolve(__dirname, 'dist');
 //adds team.html to OUTPUT_DIR which is dist
@@ -151,7 +152,7 @@ const teamBuidler = () => {
         fs.mkdirSync(OUTPUT_DIR)
    }
    // writes the file and takes in the name 'team.html' and creates the html with the newly added team members
-   fs.writeFileSync(outputPath, generateHTML(teamProfile));
+   fs.writeFileSync(outputPath, htmlGenerator(teamProfile));
 }
 
 //starts applications 
