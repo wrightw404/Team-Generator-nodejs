@@ -37,7 +37,19 @@ const htmlGenerate = (teamMembers) => {
     }
 
     //intern function 
-
+    const createIntern = intern => {
+        var internHTML = `<div class="card" style="width: 18rem;">
+        <div class="card-header">
+          ${intern.name}
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">ID: ${intern.ID}</li>
+          <li class="list-group-item">Email: <a href="mailto:${intern.email}">${intern.email}</a></li>
+          <li class="list-group-item">School: ${intern.school}</li>
+        </ul>
+      </div>`;
+      htmlArr.push(internHTML);
+    }
 }
     
 
