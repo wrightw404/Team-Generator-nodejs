@@ -1,3 +1,8 @@
+//function htmlGenerate
+    //functions for each employee class that include html
+
+
+
 module.exports = team => {
 return`<!DOCTYPE html>
 <html lang="en">
@@ -10,12 +15,7 @@ return`<!DOCTYPE html>
 <body>
 <div class="jumbotron jumbotron-fluid">
 <div class="container">
-
-${employee}
-${manager}
-${engineer}
-${intern}
-
+${htmlGenerate(team)}
 
 </div>
 </div>
