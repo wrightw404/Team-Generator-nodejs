@@ -1,3 +1,5 @@
+const engineer = require("./lib/engineerClass");
+
 //function htmlGenerate
 const htmlGenerate = (teamMembers) => {
     //empty array for html 
@@ -20,6 +22,19 @@ const htmlGenerate = (teamMembers) => {
     }
 
     //engineer function 
+    const createEngineer = engineer => {
+        var engineerHTML = `<div class="card" style="width: 18rem;">
+        <div class="card-header">
+          ${engineer.name}
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">ID: ${engineer.ID}</li>
+          <li class="list-group-item">Email: <a href="mailto:${engineer.email}">${engineerHTML.email}</a></li>
+          <li class="list-group-item">Github: <a href="https://github.com/${engineer.github}" target="_blank"</a>${engineer.github}</li>
+        </ul>
+      </div>`;
+      htmlArr.push(engineerHTML);
+    }
 
     //intern function 
 
