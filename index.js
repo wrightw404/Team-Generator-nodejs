@@ -5,9 +5,9 @@ const path = require('path');
 const manager = require('./lib/managerClass');
 const engineer = require('./lib/engineerClass');
 const intern = require('./lib/internClass');
-//const path = require('path');
 //const util = require('util');
 const OUTPUT_DIR = path.resolve(__dirname, 'dist');
+//adds team.html to OUTPUT_DIR which is dist
 const outputPath = path.join(OUTPUT_DIR, 'team.html')
 //empty array for team 
 const teamProfile = [];
