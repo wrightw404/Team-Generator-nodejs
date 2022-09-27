@@ -1,5 +1,3 @@
-const engineer = require("./lib/engineerClass");
-
 //function htmlGenerate
 const htmlGenerate = (teamMembers) => {
     //empty array for html 
@@ -50,7 +48,21 @@ const htmlGenerate = (teamMembers) => {
       </div>`;
       htmlArr.push(internHTML);
     }
-}
+
+    //loop that checks value of getRole to call one of the employee functions above
+    for(var i = 0; i < teamMembers.length; i++){
+        if(teamMembers[i].getRole()==='manager'){
+            createManager(teamMembers[i]);
+        }
+        if(teamMembers[i].getRole()==='engineer'){
+            createEngineer(teamMembers[i]);
+        }
+        if(teamMembers[i].getRole()==='intern'){
+            createIntern(teamMembers[i]);
+        }
+    }
+
+};
     
 
 
@@ -70,4 +82,4 @@ return`<!doctype html>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
   </body>
 </html>`
-}
+};
