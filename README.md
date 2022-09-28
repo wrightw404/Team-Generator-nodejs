@@ -18,9 +18,8 @@ Because this application won’t be deployed, you’ll need to provide a link to
 
 ### Acceptance Criteria
 ![acceptane criteria](../../../../Desktop/Screen%20Shot%202022-08-25%20at%202.07.57%20PM.png)
+![](../../../../Desktop/Screen%20Shot%202022-09-27%20at%208.47.50%20PM.png)
 ## Walkthrough 
-
-
 
 ## Installation
 to use this application one must install inquirer and Jest
