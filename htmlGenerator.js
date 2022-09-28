@@ -8,7 +8,7 @@ const htmlGenerate = (teamMembers) => {
     const createManager = manager => {
         var managerHTML = `<div class="card" style="width: 18rem;">
         <div class="card-header">
-          Manager:${manager.name}
+          Manager: ${manager.name}
         </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">ID: ${manager.ID}</li>
