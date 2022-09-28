@@ -28,7 +28,7 @@ const htmlGenerate = (teamMembers) => {
         <ul class="list-group list-group-flush">
           <li class="list-group-item">ID: ${engineer.ID}</li>
           <li class="list-group-item">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></li>
-          <li class="list-group-item">Github: <a href="https://github.com/${engineer.github}" target="_blank"></a>${engineer.github}</li>
+          <li class="list-group-item">Github: <a href="https://github.com/${engineer.github}" target="_blank">${engineer.github}</a></li>
         </ul>
       </div>`;
       htmlArr.push(engineerHTML);
