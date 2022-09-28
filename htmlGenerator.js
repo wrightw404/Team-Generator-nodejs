@@ -8,7 +8,7 @@ const htmlGenerate = (teamMembers) => {
     const createManager = manager => {
         var managerHTML = `<div class="card" style="width: 18rem;">
         <div class="card-header">
-          ${manager.name}
+          Manager:${manager.name}
         </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">ID: ${manager.ID}</li>
@@ -23,7 +23,7 @@ const htmlGenerate = (teamMembers) => {
     const createEngineer = engineer => {
         var engineerHTML = `<div class="card" style="width: 18rem;">
         <div class="card-header">
-          ${engineer.name}
+          Engineer: ${engineer.name}
         </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">ID: ${engineer.ID}</li>
@@ -38,7 +38,7 @@ const htmlGenerate = (teamMembers) => {
     const createIntern = intern => {
         var internHTML = `<div class="card" style="width: 18rem;">
         <div class="card-header">
-          ${intern.name}
+          Intern: ${intern.name}
         </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">ID: ${intern.ID}</li>
@@ -75,7 +75,7 @@ return`<!doctype html>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="../dist/style.css">
+    <link rel="stylesheet" href="/Users/WillWWright/Documents/Bootcamp/Module10/Team-Generator-nodejs/dist/style.css">
   </head>
   <body>
     <header><h1>Team Members</h1></header>

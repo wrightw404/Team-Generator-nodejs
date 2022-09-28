@@ -1,6 +1,9 @@
 * {
-    padding: 5% 5%;
+    padding: 2% 2%;
 }
 .header {
     text-align: center;
+    width: 100%;
+    border-left: 50%;
 }
+
