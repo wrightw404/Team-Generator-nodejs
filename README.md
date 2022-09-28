@@ -22,7 +22,7 @@ Because this application won’t be deployed, you’ll need to provide a link to
 
 ## Walkthrough 
 <iframe src="https://drive.google.com/file/d/1cS4ap3iS6BHDLMHKp2QtwU9HF4UV-zKP/preview" width="640" height="480"></iframe>
-
+Link to walkthrough video
 ## Installation
 to use this application one must install inquirer and Jest
 
