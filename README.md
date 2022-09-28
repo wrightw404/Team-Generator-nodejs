@@ -21,7 +21,7 @@ Because this application won’t be deployed, you’ll need to provide a link to
 ![Screen Shot 2022-09-27 at 8 47 50 PM](https://user-images.githubusercontent.com/53288050/192663167-5f0abd3e-74a3-4a19-8e8c-dc959047ae47.png)
 
 ## Walkthrough 
-![Walkthrough](https://drive.google.com/file/d/1cS4ap3iS6BHDLMHKp2QtwU9HF4UV-zKP/view)
+<iframe src="https://drive.google.com/file/d/1cS4ap3iS6BHDLMHKp2QtwU9HF4UV-zKP/preview" width="640" height="480"></iframe>
 
 ## Installation
 to use this application one must install inquirer and Jest
